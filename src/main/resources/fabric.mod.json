@@ -2,22 +2,29 @@
   "schemaVersion": 1,
   "id": "advancementhelper-client",
   "version": "${version}",
-
   "name": "AdvancementHelper",
   "description": "A way for players to keep up with their advancements, providing lists and tips - along with a Web UI",
-  "authors": [],
-  "contact": {},
-
+  "authors": [
+    "Noa St-Onge"
+  ],
+  "contact": {
+    "website": "https://noae.ca",
+    "repo": "https://github.com/noaether/AdvancementHelper-Client"
+  },
   "license": "All-Rights-Reserved",
   "icon": "assets/advancementhelper-client/icon.png",
-
   "environment": "client",
-  "entrypoints": {},
-
-
+  "entrypoints": {
+    "client": [
+      "ca.noae.advancementhelper.advancementhelperclient.client.AdvancementHelperClient"
+    ],
+    "main": [
+      "ca.noae.advancementhelper.advancementhelperclient.AdvancementHelper"
+    ]
+  },
   "depends": {
     "fabricloader": ">=${loader_version}",
-        "fabric": "*",
+    "fabric": "*",
     "minecraft": "${minecraft_version}"
   }
 }
