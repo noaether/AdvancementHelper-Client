@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "advancementhelper-client",
+  "version": "${version}",
+
+  "name": "AdvancementHelper",
+  "description": "A way for players to keep up with their advancements, providing lists and tips - along with a Web UI",
+  "authors": [],
+  "contact": {},
+
+  "license": "All-Rights-Reserved",
+  "icon": "assets/advancementhelper-client/icon.png",
+
+  "environment": "client",
+  "entrypoints": {},
+
+
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+        "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
